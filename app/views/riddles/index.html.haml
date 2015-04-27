@@ -8,3 +8,5 @@
         enigma
       .fb_login_button
         = link_to image_tag('login_with_fb.png'), user_omniauth_authorize_path(:facebook)
+      .twitter_login_button
+        = link_to image_tag('login_with_twitter.png'), user_omniauth_authorize_path(:twitter)

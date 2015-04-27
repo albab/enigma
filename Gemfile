@@ -22,6 +22,7 @@ gem 'twitter-bootstrap-rails'
 
 #Oauth gems easy sign-in
 gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
