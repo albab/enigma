@@ -5,4 +5,4 @@
       = link_to "Sign Out", destroy_user_session_path, method: 'delete'
     - else
       .fb_login_button
-      = link_to image_tag('login_with_fb.png'), user_omniauth_authorize_path(:facebook)
+        = link_to image_tag('login_with_fb.png'), user_omniauth_authorize_path(:facebook)
