@@ -1,1 +1,4 @@
-= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)
+- if user_signed_in?
+  = link_to "Sign Out", destroy_user_session_path, method: 'delete'
+- else
+  = link_to image_tag('/images/login_with_fb.png'), user_omniauth_authorize_path(:facebook)
