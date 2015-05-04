@@ -8,15 +8,15 @@
         - @riddles.each do |riddle|
           #each_riddle
             #riddle_question
-              - riddle.question
+              = riddle.question
             #riddle_answer
-              - riddle.answer
+              = riddle.answer
             #riddle_points
-              - "Points: #{riddle.points}"
+              = "Points: #{riddle.points}"
             #riddle_lat
-              - riddle.lat
+              = riddle.lat
             #riddle_lon
-              - riddle.lon
+              = riddle.lon
 
     - else
       %h2.enigma_title
