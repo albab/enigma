@@ -5,12 +5,18 @@
       = link_to "Sign Out", destroy_user_session_path, id: "user_sign_out_link", method: 'delete'
 
       .col-xs-12
-        = @riddles.each do |riddle|
-          = riddle.question
-          = riddle.answer
-          = riddle.points
-          = riddle.lat
-          = riddle.lon
+        - @riddles.each do |riddle|
+          #each_riddle
+            #riddle_question
+              - riddle.question
+            #riddle_answer
+              - riddle.answer
+            #riddle_points
+              - "Points: #{riddle.points}"
+            #riddle_lat
+              - riddle.lat
+            #riddle_lon
+              - riddle.lon
 
     - else
       %h2.enigma_title
