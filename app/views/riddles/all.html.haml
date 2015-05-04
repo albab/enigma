@@ -1,0 +1,13 @@
+.col-xs-12.all_riddles
+  - @riddles.each do |riddle|
+    #each_riddle.col-xs-4
+      #riddle_question
+        = riddle.question
+      #riddle_answer
+        = riddle.answer
+      #riddle_points
+        = "Points: #{riddle.points}"
+      #riddle_lat
+        = "Lat: #{riddle.lat}"
+      #riddle_lon
+        = "Lon: #{riddle.lon}"

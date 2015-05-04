@@ -6,6 +6,14 @@ class RiddlesController < ApplicationController
     @riddles = Riddle.all
   end
 
+  def all
+    @riddles = Riddle.all
+    respond_to do |format|
+      format.html
+      format.json { render json: @riddles, root: false}
+  end
+
+
   def destroy
   end
 
