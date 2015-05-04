@@ -2,7 +2,7 @@
 
   .col-xs-12.text-center
     - if user_signed_in?
-      = link_to "Sign Out", destroy_user_session_path, method: 'delete'
+      = link_to "Sign Out", destroy_user_session_path, method: 'delete', id: "user_sign_out_link"
     - else
       %h2.enigma_title
         enigma
