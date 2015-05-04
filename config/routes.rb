@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'riddles/update'
 
-  get 'riddles/all'
+  get '/all' => 'riddles#all'
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
