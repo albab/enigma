@@ -22,11 +22,11 @@
 }
 
 #user_sign_out_link {
-  font-size: 30px;
-  color: #000;
+  font-size: 19px;
+  color: #ff;
 }
 
-#user_sign_out_link a {
+#user_sign_out_link a:link a:hover a:active {
   text-decoration: none;
 }
 
