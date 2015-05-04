@@ -4,7 +4,7 @@
     - if user_signed_in?
       = link_to "Sign Out", destroy_user_session_path, id: "user_sign_out_link", method: 'delete'
 
-      .col-xs-12
+      .col-xs-12.all_riddles
         - @riddles.each do |riddle|
           #each_riddle.col-xs-4
             #riddle_question
