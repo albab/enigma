@@ -11,6 +11,7 @@ class RiddlesController < ApplicationController
     respond_to do |format|
       format.html
       format.json { render json: @riddles, root: false}
+    end
   end
 
 
