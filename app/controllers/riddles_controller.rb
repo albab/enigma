@@ -3,6 +3,7 @@ class RiddlesController < ApplicationController
   end
 
   def index
+    @riddles = Riddle.all
   end
 
   def destroy

@@ -3,6 +3,15 @@
   .col-xs-12.text-center
     - if user_signed_in?
       = link_to "Sign Out", destroy_user_session_path, id: "user_sign_out_link", method: 'delete'
+
+      .col-xs-12
+        = @riddles.each do |riddle|
+          = riddle.question
+          = riddle.answer
+          = riddle.points
+          = riddle.lat
+          = riddle.lon
+
     - else
       %h2.enigma_title
         enigma
