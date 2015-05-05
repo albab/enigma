@@ -16,8 +16,6 @@ gem 'devise'
 
 gem "haml-rails", "~> 0.9"
 
-gem 'rails_12factor'
-
 gem 'twitter-bootstrap-rails'
 
 #Oauth gems easy sign-in
@@ -61,6 +59,6 @@ end
 
 group :production do
   gem 'pg'
-
+  gem 'rails_12factor'
 end
 
