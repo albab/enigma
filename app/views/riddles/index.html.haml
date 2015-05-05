@@ -1,5 +1,4 @@
 .row
-
   .col-xs-12.text-center
     - if user_signed_in?
       = link_to "Sign Out", destroy_user_session_path, id: "user_sign_out_link", method: 'delete'
