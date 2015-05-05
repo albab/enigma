@@ -43,7 +43,7 @@
           $.getJSON('https://enigmaa.herokuapp.com/map.json', function(data) {
               console.log(data);
 
-              function addMarkerArray( markersArray, load_map)
+              function addMarkerArray( markersArray, map)
               {
                   for(var i = 0; i < markersArray.length ; i++)
                   {
@@ -52,7 +52,7 @@
                     console.log(latitude);
                     var marker = new google.maps.Marker({
                         position: new google.maps.LatLng(latitude,longitude),
-                        map: load_map,
+                        map: map,
                         icon:'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld='+ '?' +'|000000|ffffff'
                     });
                   }
