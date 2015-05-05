@@ -42,6 +42,29 @@
 
           $.getJSON('https://enigmaa.herokuapp.com/map.json', function(data) {
               console.log(data);
+
+          var myJSON = [
+          {lat : 10.010232,long: 34.123232},
+          {lat : 23.122323,long: 76.343434},
+          {lat : 43.123434,long: 74.12343}
+          ]; //Test data
+
+              function addMarkerArray( markersArray, load_map)
+              {
+                  for(var i = 0; i < markersArray.length ; i++)
+                  {
+                    var latitude = markersArray[i].lat;
+                    var longitude = markersArray[i].long;
+                    var myLatlng = map.LatLng(latitude,longitude);
+                    var marker = map.Marker({
+                        position: myLatlng,
+                        map: load_map,
+                        icon:'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld='+ '?' +'|000000|ffffff'
+                    });
+                  }
+              }
+              addMarkerArray(myJSON, load_map);
+
           });
         });
       }
