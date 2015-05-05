@@ -41,7 +41,6 @@
                   {
                     var latitude = parseFloat(markersArray[i].lat);
                     var longitude = parseFloat(markersArray[i].long);
-                    console.log(latitude);
                     var marker = new google.maps.Marker({
                         position: new google.maps.LatLng(latitude,longitude),
                         map: map,
@@ -52,14 +51,13 @@
               addMarkerArray(data, load_map);
 
           });
-        });
-
-
           google.maps.event.addDomListener(window, 'load', load_map);
-
           document.getElementById("map_area").style.width = "100%";
           document.getElementById("map_area").style.height = "863px";
           document.getElementById("map_area").style.transform = "none";
+
+        });
+
       }
     };
 
