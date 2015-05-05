@@ -1,4 +1,6 @@
 - if user_signed_in?
+  %h3.enigma_signed_in_title.text-center
+    enigma
   = link_to "Sign Out", destroy_user_session_path, id: "user_sign_out_link", method: 'delete'
 
   #map_area
@@ -29,7 +31,7 @@
      });
 
      document.getElementById("map_area").style.width = "100%";
-     document.getElementById("map_area").style.height = "700px";
+     document.getElementById("map_area").style.height = "840px";
      document.getElementById("map_area").style.transform = "none";
 
 - else
