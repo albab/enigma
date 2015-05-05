@@ -45,11 +45,10 @@
                   {
                     var latitude = parseFloat(markersArray[i].lat);
                     var longitude = parseFloat(markersArray[i].lon);
-                    console.log(latitude);
                     var marker = new google.maps.Marker({
                         position: new google.maps.LatLng(latitude,longitude),
                         map: map,
-                        icon:'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld='+ '?' +'|000000|ffffff'
+                        icon:'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld='+ '?' +'|34bf79|ffffff'
                     });
                   }
               }
