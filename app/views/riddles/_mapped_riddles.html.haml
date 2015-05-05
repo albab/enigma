@@ -1,0 +1,24 @@
+:javascript
+
+    var map = document.getElementById("map_area");
+
+    var map_details = {
+      center:new google.maps.LatLng("#{@riddles.first.lat}","#{@riddles.first.lon}"),
+      zoom:16,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+
+    var load_map=new google.maps.Map(document.getElementById("map_area"), map_details);
+
+
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng("#{@riddles.first.lat}","#{@riddles.first.lon}"),
+        map: load_map,
+        icon:'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld='+ '*' +'|000000|ffffff'
+    });
+
+    google.maps.event.addDomListener(window, 'load', load_map);
+
+    document.getElementById("map_area").style.width = "100%";
+    document.getElementById("map_area").style.height = "863px";
+    document.getElementById("map_area").style.transform = "none";

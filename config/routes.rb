@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get '/all' => 'riddles#all'
 
+  get '/user_location' => 'riddles#location_finder'
+
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   # The priority is based upon order of creation: first created -> highest priority.

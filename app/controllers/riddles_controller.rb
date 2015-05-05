@@ -14,6 +14,14 @@ class RiddlesController < ApplicationController
     end
   end
 
+  def location_finder
+    @lat = params['coordinates']['lat'] rescue nil
+    @lon = params['coordinates']['lon'] rescue nil
+    session[:lat] = @lat
+    session[:lon] = @lon
+    @locations = Location.near([@lat, @lon], 100)
+    lat_and_long = @lat + ", " + @lon
+  end
 
   def destroy
   end
