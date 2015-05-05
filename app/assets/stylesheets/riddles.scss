@@ -34,8 +34,8 @@ body {
 }
 
 #map_area {
-  width:900px;
-  height:500px;
+  -webkit-transform:none !important;
+  transform: none !important;
 }
 
 .enigma_title {
