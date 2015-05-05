@@ -19,7 +19,6 @@ class RiddlesController < ApplicationController
     @lon = params['coordinates']['lon'] rescue nil
     session[:lat] = @lat
     session[:lon] = @lon
-    @locations = Riddle.near([@lat, @lon], 100)
     lat_and_long = @lat + ", " + @lon
   end
 
