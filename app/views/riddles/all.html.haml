@@ -1,24 +1,25 @@
-.row
-  .col-xs-12.text-center
-    - if user_signed_in?
-      = link_to "Sign Out", destroy_user_session_path, id: "user_sign_out_link", method: 'delete'
+.container
+  .row
+    .col-xs-12.text-center
+      - if user_signed_in?
+        = link_to "Sign Out", destroy_user_session_path, id: "user_sign_out_link", method: 'delete'
 
-      .col-xs-12.all_riddles
-        - @riddles.each do |riddle|
-          #each_riddle.col-xs-4
-            #riddle_question
-              = riddle.question
-            #riddle_answer
-              = riddle.answer
-            #riddle_points
-              = "Points: #{riddle.points}"
-            #riddle_lat
-              = "Lat: #{riddle.lat}"
-            #riddle_lon
-              = "Lon: #{riddle.lon}"
+        .col-xs-12.all_riddles
+          - @riddles.each do |riddle|
+            #each_riddle.col-xs-4
+              #riddle_question
+                = riddle.question
+              #riddle_answer
+                = riddle.answer
+              #riddle_points
+                = "Points: #{riddle.points}"
+              #riddle_lat
+                = "Lat: #{riddle.lat}"
+              #riddle_lon
+                = "Lon: #{riddle.lon}"
 
-    - else
-      %h2.enigma_title
-        enigma
-      .fb_login_button
-        = link_to image_tag('login_with_fb.png'), user_omniauth_authorize_path(:facebook)
+      - else
+        %h2.enigma_title
+          enigma
+        .fb_login_button
+          = link_to image_tag('login_with_fb.png'), user_omniauth_authorize_path(:facebook)

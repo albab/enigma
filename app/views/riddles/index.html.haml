@@ -1,39 +1,37 @@
-.row
-  .col-xs-12.text-center
-    - if user_signed_in?
-      = link_to "Sign Out", destroy_user_session_path, id: "user_sign_out_link", method: 'delete'
+- if user_signed_in?
+  = link_to "Sign Out", destroy_user_session_path, id: "user_sign_out_link", method: 'delete'
 
-      #map_area
-      %h1.hello
-        Hello
-      :javascript
-        var address = 'Oxford Street, London, UK';
+  #map_area
+  %h1.hello
+    Hello
+  :javascript
+    var address = 'Oxford Street, London, UK';
 
-         var map = new google.maps.Map(document.getElementById('map_area'), {
-             mapTypeId: google.maps.MapTypeId.TERRAIN,
-             zoom: 12
-         });
+     var map = new google.maps.Map(document.getElementById('map_area'), {
+         mapTypeId: google.maps.MapTypeId.TERRAIN,
+         zoom: 12
+     });
 
-         var geocoder = new google.maps.Geocoder();
+     var geocoder = new google.maps.Geocoder();
 
-         geocoder.geocode({
-            'address': address
-         },
-         function(results, status) {
-            if(status == google.maps.GeocoderStatus.OK) {
-               new google.maps.Marker({
-                  position: results[0].geometry.location,
-                  map: map
-               });
-               map.setCenter(results[0].geometry.location);
-            }
-            else {
-               // Google couldn't geocode this request. Handle appropriately.
-            }
-         });
+     geocoder.geocode({
+        'address': address
+     },
+     function(results, status) {
+        if(status == google.maps.GeocoderStatus.OK) {
+           new google.maps.Marker({
+              position: results[0].geometry.location,
+              map: map
+           });
+           map.setCenter(results[0].geometry.location);
+        }
+        else {
+           // Google couldn't geocode this request. Handle appropriately.
+        }
+     });
 
-    - else
-      %h2.enigma_title
-        enigma
-      .fb_login_button
-        = link_to image_tag('login_with_fb.png'), user_omniauth_authorize_path(:facebook)
+- else
+  %h2.enigma_title
+    enigma
+  .fb_login_button
+    = link_to image_tag('login_with_fb.png'), user_omniauth_authorize_path(:facebook)
