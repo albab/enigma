@@ -40,7 +40,9 @@
           document.getElementById("map_area").style.height = "863px";
           document.getElementById("map_area").style.transform = "none";
 
-
+          $.getJSON('https://enigmaa.herokuapp.com/map.json', function(data) {
+              console.log(data);
+          });
         });
       }
     };

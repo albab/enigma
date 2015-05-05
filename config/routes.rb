@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get '/all' => 'riddles#all'
 
-  get '/user_location' => 'riddles#location_finder'
+  get '/map' => 'riddles#map_data'
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 

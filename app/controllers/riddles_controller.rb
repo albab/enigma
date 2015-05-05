@@ -22,6 +22,14 @@ class RiddlesController < ApplicationController
     lat_and_long = @lat + ", " + @lon
   end
 
+  def map_data
+    @riddles = Riddle.all
+    respond_to do |format|
+      format.html
+      format.json { render json: @riddles, root: false, id: false, question: false, answer: false, points: false}
+    end
+  end
+
   def destroy
   end
 
