@@ -47,6 +47,7 @@
               {
                   for(var i = 0; i < markersArray.length ; i++)
                   {
+                    console.log(markersArray[0].lat);
                     var latitude = parseInt(markersArray[i].lat);
                     var longitude = parseInt(markersArray[i].long);
                     var marker = new google.maps.Marker({
