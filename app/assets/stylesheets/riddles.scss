@@ -15,11 +15,6 @@
 html {
   height: 100%;
 }
-
-#map_area {
-  height: 100%;
-}
-
 .twitter_login_button img {
   text-align: center;
   margin-top:20px;
@@ -36,6 +31,12 @@ html {
   float:right;
   margin-top:15px;
 }
+
+
+#map_canvas_container {position: relative;}
+
+#map_area {position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%;}
+
 
 body {
   background-color: #34bf79;
