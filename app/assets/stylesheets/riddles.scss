@@ -12,6 +12,10 @@
   height:55px;
 }
 
+html { height: 100%; }
+
+#map_area { height: 100%; }
+
 .twitter_login_button img {
   text-align: center;
   margin-top:20px;
@@ -31,6 +35,9 @@
 
 body {
   background-color: #34bf79;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 .enigma_title {

@@ -3,19 +3,32 @@
     - if user_signed_in?
       = link_to "Sign Out", destroy_user_session_path, id: "user_sign_out_link", method: 'delete'
 
-      .col-xs-12.all_riddles
-        - @riddles.each do |riddle|
-          #each_riddle.col-xs-4
-            #riddle_question
-              = riddle.question
-            #riddle_answer
-              = riddle.answer
-            #riddle_points
-              = "Points: #{riddle.points}"
-            #riddle_lat
-              = "Lat: #{riddle.lat}"
-            #riddle_lon
-              = "Lon: #{riddle.lon}"
+      #map_area
+      :javascript
+        var address = 'Oxford Street, London, UK';
+
+         var map = new google.maps.Map(document.getElementById('map_area'), {
+             mapTypeId: google.maps.MapTypeId.TERRAIN,
+             zoom: 12
+         });
+
+         var geocoder = new google.maps.Geocoder();
+
+         geocoder.geocode({
+            'address': address
+         },
+         function(results, status) {
+            if(status == google.maps.GeocoderStatus.OK) {
+               new google.maps.Marker({
+                  position: results[0].geometry.location,
+                  map: map
+               });
+               map.setCenter(results[0].geometry.location);
+            }
+            else {
+               // Google couldn't geocode this request. Handle appropriately.
+            }
+         });
 
     - else
       %h2.enigma_title
