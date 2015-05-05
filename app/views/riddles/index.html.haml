@@ -55,7 +55,7 @@
                   {
                     var latitude = markersArray[i].lat;
                     var longitude = markersArray[i].long;
-                    var marker = load_map.Marker({
+                    var marker = new google.maps.Marker({
                         position: new google.maps.LatLng(latitude,longitude),
                         map: load_map,
                         icon:'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld='+ '?' +'|000000|ffffff'
