@@ -40,34 +40,27 @@
           document.getElementById("map_area").style.height = "863px";
           document.getElementById("map_area").style.transform = "none";
 
-          var has_loaded = false;
+          $.getJSON('https://enigmaa.herokuapp.com/map.json', function(data) {
+              console.log(data);
 
-          if (has_loaded == false) {
+              function addMarkerArray( markersArray, load_map)
+              {
+                  for(var i = 0; i < markersArray.length ; i++)
+                  {
+                    var latitude = parseFloat(markersArray[i].lat);
+                    var longitude = parseFloat(markersArray[i].long);
+                    console.log(latitude);
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(latitude,longitude),
+                        map: load_map,
+                        icon:'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld='+ '?' +'|000000|ffffff'
+                    });
+                  }
+              }
+              addMarkerArray(data, load_map);
 
-            $.getJSON('https://enigmaa.herokuapp.com/map.json', function(data) {
-                console.log(data);
-
-                function addMarkerArray( markersArray, load_map)
-                {
-                    for(var i = 0; i < markersArray.length ; i++)
-                    {
-                      var latitude = parseFloat(markersArray[i].lat);
-                      console.log(latitude);
-                      var longitude = parseFloat(markersArray[i].long);
-                      var marker = new google.maps.Marker({
-                          position: new google.maps.LatLng(latitude,longitude),
-                          map: load_map,
-                          icon:'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld='+ '?' +'|000000|ffffff'
-                      });
-                    }
-                }
-                addMarkerArray(data, load_map);
-                has_loaded = true;
-
-              });
-            );
-          }
-
+          });
+        });
       }
     };
 
