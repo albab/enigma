@@ -26,7 +26,7 @@ class RiddlesController < ApplicationController
     @riddles = Riddle.all
     respond_to do |format|
       format.html
-      format.json { render json: @riddles, root: false, id: false, question: false, answer: false, points: false}
+      format.json { render json: @riddles, root: false}
     end
   end
 
