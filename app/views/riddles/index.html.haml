@@ -5,6 +5,46 @@
 
   #map_area
 
+  :javascript
+
+    window.onload = function() {
+      find_location();
+    };
+
+    var find_location = function() {
+      var has_loaded = false;
+      if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(function(position) {
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+
+          var map = document.getElementById("map_area");
+
+          var map_details = {
+            center:new google.maps.LatLng(latitude,longitude),
+            zoom:16,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+
+          var load_map=new google.maps.Map(document.getElementById("map_area"), map_details);
+
+          var marker = new google.maps.Marker({
+              position: new google.maps.LatLng(latitude,longitude),
+              map: load_map,
+              icon:'https://chart.googleapis.com/chart?chst=d_map_pin_letter&chld='+ '*' +'|000000|ffffff'
+          });
+
+          google.maps.event.addDomListener(window, 'load', load_map);
+
+          document.getElementById("map_area").style.width = "100%";
+          document.getElementById("map_area").style.height = "863px";
+          document.getElementById("map_area").style.transform = "none";
+
+
+        });
+      }
+    };
+
 - else
   %h2.enigma_title
     enigma
@@ -14,38 +54,4 @@
 
 
 
-:javascript
-
-  window.onload = function() {
-    find_location();
-  };
-
-  var find_location = function() {
-    var has_loaded = false;
-    if (navigator.geolocation) {
-      navigator.geolocation.watchPosition(function(position) {
-        var latitude = position.coords.latitude;
-        var longitude = position.coords.longitude;
-        if (has_loaded == false) {
-          $.ajax({
-            type: 'GET',
-            url: '/user_location',
-            dataType: 'JSONP',
-            data: { coordinates: {lat: latitude, lon: longitude}}
-          });
-          has_loaded = true;
-        }
-      }, function (error) {
-        if (error.code == error.PERMISSION_DENIED) {
-          var locations = document.getElementById("locations_list");
-          if (locations) {
-            var location_error = document.createElement('div');
-            location_error.innerHTML = "Geo location services appear to be disabled on your device.";
-            location_error.id = "location_permissions_error";
-            locations.appendChild(location_error);
-          }
-        }
-      });
-    }
-  };
 
