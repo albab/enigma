@@ -9,6 +9,11 @@ class RiddlesController < ApplicationController
   def create
     @riddle = Riddle.new
     binding.pry
+    @riddle.save
+    respond_to do |format|
+      format.html
+      format.json { render json: "Successfully added."}
+    end
   end
 
 
