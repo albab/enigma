@@ -14,7 +14,7 @@ class RiddlesController < ApplicationController
     @riddle = Riddle.new
     binding.pry
     @riddle.save
-    render json: { message: "Success"! }
+    render json: { message: "Success!" }
   end
 
 
