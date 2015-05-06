@@ -12,7 +12,10 @@ class RiddlesController < ApplicationController
 
   def create
     @question = params['question']
+    @answer = params['answer']
     @riddle = Riddle.create
+    @riddle.question = @question
+    @riddle.answer = @answer
     @riddle.save
     render json: { message: "Success!" }
   end
