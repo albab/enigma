@@ -13,7 +13,6 @@ class RiddlesController < ApplicationController
   def create
     @question = params['question']
     @riddle = Riddle.create
-    binding.pry
     @riddle.save
     render json: { message: "Success!" }
   end
