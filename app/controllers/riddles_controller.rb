@@ -17,6 +17,9 @@ class RiddlesController < ApplicationController
     @riddle.question = @question
     @riddle.answer = @answer
     @riddle.save
+    respond_to do |format|
+      format.json { render json: @riddles }
+    end
   end
 
 
