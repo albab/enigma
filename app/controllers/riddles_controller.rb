@@ -6,6 +6,12 @@ class RiddlesController < ApplicationController
     @riddles = Riddle.all
   end
 
+  def create
+    @riddle = Riddle.new
+    binding.pry
+  end
+
+
   def all
     @riddles = Riddle.all
     respond_to do |format|

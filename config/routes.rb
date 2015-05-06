@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get '/map' => 'riddles#map_data'
 
+  get '/new_riddle/:riddle' => 'riddles#create'
+
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   # The priority is based upon order of creation: first created -> highest priority.
