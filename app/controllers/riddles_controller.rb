@@ -1,7 +1,7 @@
 class RiddlesController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
-   respond_to :json, :html
+   respond_to :json
 
   def new
   end
@@ -11,13 +11,12 @@ class RiddlesController < ApplicationController
   end
 
   def create
+    @riddle = Riddle.new
     @question = params['question']
     @answer = params['answer']
-    @riddle = Riddle.create
     @riddle.question = @question
     @riddle.answer = @answer
     @riddle.save
-    render json: { message: "Success!" }
   end
 
 
