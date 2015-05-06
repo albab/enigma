@@ -1,6 +1,8 @@
 class RiddlesController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
+   respond_to :json, :html
+
   def new
   end
 
@@ -12,9 +14,7 @@ class RiddlesController < ApplicationController
     @riddle = Riddle.new
     binding.pry
     @riddle.save
-    respond_to do |format|
-      format.json { render json: "Successfully added."}
-    end
+    render json: { message: "Success"! }
   end
 
 
