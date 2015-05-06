@@ -13,7 +13,6 @@ class RiddlesController < ApplicationController
     binding.pry
     @riddle.save
     respond_to do |format|
-      format.html
       format.json { render json: "Successfully added."}
     end
   end
