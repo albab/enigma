@@ -11,6 +11,7 @@ class RiddlesController < ApplicationController
   end
 
   def create
+    @question = params['question']
     @riddle = Riddle.new
     binding.pry
     @riddle.save
