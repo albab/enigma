@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get '/map' => 'riddles#map_data'
 
-  post '/new_riddle' => 'riddles#create'
+  match '/new_riddle',  to: 'riddles#create', via: :post
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
