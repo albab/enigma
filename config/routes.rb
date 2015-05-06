@@ -5,8 +5,6 @@ Rails.application.routes.draw do
 
   get 'riddles/destroy'
 
-  get 'riddles/create'
-
   get 'riddles/update'
 
   get '/all' => 'riddles#all'
