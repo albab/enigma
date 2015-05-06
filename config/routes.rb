@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   get '/map' => 'riddles#map_data'
 
-  post '/new_riddle/:question/:answer' => 'riddles#create'
+  post '/new_riddle' => 'riddles#create'
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
