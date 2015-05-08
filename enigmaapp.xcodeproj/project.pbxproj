@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		084AAE031AF8326900BA229E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 084AAE021AF8326900BA229E /* main.m */; };
+		084AAE061AF8326900BA229E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 084AAE051AF8326900BA229E /* AppDelegate.m */; };
+		084AAE091AF8326900BA229E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 084AAE081AF8326900BA229E /* ViewController.m */; };
+		084AAE0C1AF8326900BA229E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084AAE0A1AF8326900BA229E /* Main.storyboard */; };
+		084AAE0E1AF8326900BA229E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084AAE0D1AF8326900BA229E /* Images.xcassets */; };
+		084AAE111AF8326900BA229E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 084AAE0F1AF8326900BA229E /* LaunchScreen.xib */; };
+		084AAE1D1AF8326900BA229E /* enigmaappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 084AAE1C1AF8326900BA229E /* enigmaappTests.m */; };
+		088DEFBB1AF9B2E1003DEE28 /* AddNewRiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DEFBA1AF9B2E1003DEE28 /* AddNewRiddleViewController.m */; };
+		088DEFC01AF9E594003DEE28 /* AnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DEFBF1AF9E594003DEE28 /* AnswerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		084AAE171AF8326900BA229E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 084AADF51AF8326900BA229E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 084AADFC1AF8326900BA229E;
+			remoteInfo = enigmaapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		084AADFD1AF8326900BA229E /* enigmaapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enigmaapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		084AAE011AF8326900BA229E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		084AAE021AF8326900BA229E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		084AAE041AF8326900BA229E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		084AAE051AF8326900BA229E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		084AAE071AF8326900BA229E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		084AAE081AF8326900BA229E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		084AAE0B1AF8326900BA229E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		084AAE0D1AF8326900BA229E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		084AAE101AF8326900BA229E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		084AAE161AF8326900BA229E /* enigmaappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enigmaappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		084AAE1B1AF8326900BA229E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		084AAE1C1AF8326900BA229E /* enigmaappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = enigmaappTests.m; sourceTree = "<group>"; };
+		088DEFB91AF9B2E1003DEE28 /* AddNewRiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewRiddleViewController.h; sourceTree = "<group>"; };
+		088DEFBA1AF9B2E1003DEE28 /* AddNewRiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewRiddleViewController.m; sourceTree = "<group>"; };
+		088DEFBE1AF9E594003DEE28 /* AnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerViewController.h; sourceTree = "<group>"; };
+		088DEFBF1AF9E594003DEE28 /* AnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		084AADFA1AF8326900BA229E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		084AAE131AF8326900BA229E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		084AADF41AF8326900BA229E = {
+			isa = PBXGroup;
+			children = (
+				084AADFF1AF8326900BA229E /* enigmaapp */,
+				084AAE191AF8326900BA229E /* enigmaappTests */,
+				084AADFE1AF8326900BA229E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		084AADFE1AF8326900BA229E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				084AADFD1AF8326900BA229E /* enigmaapp.app */,
+				084AAE161AF8326900BA229E /* enigmaappTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		084AADFF1AF8326900BA229E /* enigmaapp */ = {
+			isa = PBXGroup;
+			children = (
+				084AAE041AF8326900BA229E /* AppDelegate.h */,
+				084AAE051AF8326900BA229E /* AppDelegate.m */,
+				084AAE071AF8326900BA229E /* ViewController.h */,
+				084AAE081AF8326900BA229E /* ViewController.m */,
+				088DEFB91AF9B2E1003DEE28 /* AddNewRiddleViewController.h */,
+				088DEFBA1AF9B2E1003DEE28 /* AddNewRiddleViewController.m */,
+				084AAE0A1AF8326900BA229E /* Main.storyboard */,
+				088DEFBE1AF9E594003DEE28 /* AnswerViewController.h */,
+				088DEFBF1AF9E594003DEE28 /* AnswerViewController.m */,
+				084AAE0D1AF8326900BA229E /* Images.xcassets */,
+				084AAE0F1AF8326900BA229E /* LaunchScreen.xib */,
+				084AAE001AF8326900BA229E /* Supporting Files */,
+			);
+			path = enigmaapp;
+			sourceTree = "<group>";
+		};
+		084AAE001AF8326900BA229E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				084AAE011AF8326900BA229E /* Info.plist */,
+				084AAE021AF8326900BA229E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		084AAE191AF8326900BA229E /* enigmaappTests */ = {
+			isa = PBXGroup;
+			children = (
+				084AAE1C1AF8326900BA229E /* enigmaappTests.m */,
+				084AAE1A1AF8326900BA229E /* Supporting Files */,
+			);
+			path = enigmaappTests;
+			sourceTree = "<group>";
+		};
+		084AAE1A1AF8326900BA229E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				084AAE1B1AF8326900BA229E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		084AADFC1AF8326900BA229E /* enigmaapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 084AAE201AF8326900BA229E /* Build configuration list for PBXNativeTarget "enigmaapp" */;
+			buildPhases = (
+				084AADF91AF8326900BA229E /* Sources */,
+				084AADFA1AF8326900BA229E /* Frameworks */,
+				084AADFB1AF8326900BA229E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = enigmaapp;
+			productName = enigmaapp;
+			productReference = 084AADFD1AF8326900BA229E /* enigmaapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		084AAE151AF8326900BA229E /* enigmaappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 084AAE231AF8326900BA229E /* Build configuration list for PBXNativeTarget "enigmaappTests" */;
+			buildPhases = (
+				084AAE121AF8326900BA229E /* Sources */,
+				084AAE131AF8326900BA229E /* Frameworks */,
+				084AAE141AF8326900BA229E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				084AAE181AF8326900BA229E /* PBXTargetDependency */,
+			);
+			name = enigmaappTests;
+			productName = enigmaappTests;
+			productReference = 084AAE161AF8326900BA229E /* enigmaappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		084AADF51AF8326900BA229E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Alex Babich";
+				TargetAttributes = {
+					084AADFC1AF8326900BA229E = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					084AAE151AF8326900BA229E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 084AADFC1AF8326900BA229E;
+					};
+				};
+			};
+			buildConfigurationList = 084AADF81AF8326900BA229E /* Build configuration list for PBXProject "enigmaapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 084AADF41AF8326900BA229E;
+			productRefGroup = 084AADFE1AF8326900BA229E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				084AADFC1AF8326900BA229E /* enigmaapp */,
+				084AAE151AF8326900BA229E /* enigmaappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		084AADFB1AF8326900BA229E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084AAE0C1AF8326900BA229E /* Main.storyboard in Resources */,
+				084AAE111AF8326900BA229E /* LaunchScreen.xib in Resources */,
+				084AAE0E1AF8326900BA229E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		084AAE141AF8326900BA229E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		084AADF91AF8326900BA229E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084AAE091AF8326900BA229E /* ViewController.m in Sources */,
+				088DEFC01AF9E594003DEE28 /* AnswerViewController.m in Sources */,
+				088DEFBB1AF9B2E1003DEE28 /* AddNewRiddleViewController.m in Sources */,
+				084AAE061AF8326900BA229E /* AppDelegate.m in Sources */,
+				084AAE031AF8326900BA229E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		084AAE121AF8326900BA229E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084AAE1D1AF8326900BA229E /* enigmaappTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		084AAE181AF8326900BA229E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 084AADFC1AF8326900BA229E /* enigmaapp */;
+			targetProxy = 084AAE171AF8326900BA229E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		084AAE0A1AF8326900BA229E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				084AAE0B1AF8326900BA229E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		084AAE0F1AF8326900BA229E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				084AAE101AF8326900BA229E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		084AAE1E1AF8326900BA229E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		084AAE1F1AF8326900BA229E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		084AAE211AF8326900BA229E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = enigmaapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		084AAE221AF8326900BA229E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = enigmaapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		084AAE241AF8326900BA229E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = enigmaappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/enigmaapp.app/enigmaapp";
+			};
+			name = Debug;
+		};
+		084AAE251AF8326900BA229E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = enigmaappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/enigmaapp.app/enigmaapp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		084AADF81AF8326900BA229E /* Build configuration list for PBXProject "enigmaapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084AAE1E1AF8326900BA229E /* Debug */,
+				084AAE1F1AF8326900BA229E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		084AAE201AF8326900BA229E /* Build configuration list for PBXNativeTarget "enigmaapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084AAE211AF8326900BA229E /* Debug */,
+				084AAE221AF8326900BA229E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		084AAE231AF8326900BA229E /* Build configuration list for PBXNativeTarget "enigmaappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				084AAE241AF8326900BA229E /* Debug */,
+				084AAE251AF8326900BA229E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 084AADF51AF8326900BA229E /* Project object */;
+}
